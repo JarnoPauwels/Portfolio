@@ -1,0 +1,31 @@
+.skills-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5em; */
+}
+
+.skills-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-grid {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* align-items: center;
+    justify-content: center; */
+}
+  
+.skill-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}

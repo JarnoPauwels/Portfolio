@@ -1,0 +1,69 @@
+/* src/components/ProjectCard.css */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+/*   
+  .project-card-link:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  } */
+  
+
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+  transition: transform 0.3s ease; 
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 250px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px); /* Add a slight lift on hover */
+}
+
+.project-image {
+  width: 100%;
+  height: auto; /* Adjust the height as needed */
+  object-fit: cover;
+}
+
+.project-skills {
+  margin-top: 8px;
+  color: #555;
+}
+
+.project-info h3 {
+  margin-bottom: 8px;
+}
+
+.project-info p {
+  margin-bottom: 16px;
+}
+
+/* .project-info a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-info a:hover {
+  text-decoration: underline;
+} */
+
+.skill-images {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.skill-image {
+  width: 32px; /* Adjust the size of the skill images */
+  height: 32px;
+  object-fit: contain;
+}

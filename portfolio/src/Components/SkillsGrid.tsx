@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 const SkillsGrid: React.FC = () => {
-    const skills = ['../icons/HTML.png', '../icons/CSS.png', '../icons/JS.png', '../icons/nodejs.png', '../icons/React.png', '../icons/vue.png', '../icons/tailwind.png', '../icons/mongodb.png', '../icons/mysql.png', '../icons/springboot.png', '../icons/Figma.png', '../icons/xd.png', '../icons/photoshop.png', '../icons/illustrator.png', '../icons/ae.png', ];
+    const skills = ['../icons/HTML.png', '../icons/CSS.png', '../icons/JS.png', '../icons/nodejs.png', '../icons/React.png', '../icons/vue.png', '../icons/tailwind.png', '../icons/mongodb.png', '../icons/mysql.png', '../icons/Springboot.png', '../icons/Figma.png', '../icons/xd.png', '../icons/photoshop.png', '../icons/illustrator.png', '../icons/ae.png', ];
   
     return (
       <div className='skills-section'>

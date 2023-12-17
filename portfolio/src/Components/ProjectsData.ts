@@ -55,7 +55,7 @@ export interface ProjectData {
       title: 'Medialab Loan Application',
       description: 'Loan Application for the schools medialab',
       imageUrl: ["../images/loanapp1.png", "../images/loanapp2.png", "../images/loanapp3.png", "../images/loanapp4.png" , "../images/loanapp5.png", "../images/loanapp6.png"],
-      skillImages: ['../icons/kotlin.png', '../icons/springboot.png', '../icons/vue.png', '../icons/mysql.png',],
+      skillImages: ['../icons/kotlin.png', '../icons/Springboot.png', '../icons/vue.png', '../icons/mysql.png',],
       content: 'Loan Application for the schools medialab. Users can register and log in. They can then see a list of all the items and their details that are available in the medialab, they can then lend an item. There is also the Admin Dashboard where an admin can manage the users, the items and the loans. This project was made in collaboration with another student.' ,
       githubUrl: "https://github.com/EHB-MCT/dev4-course-project-quinn-jarno-1/tree/main",
       category: 'Web',

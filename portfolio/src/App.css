@@ -300,8 +300,9 @@ html {
 }
 
 .ImageModal img {
-  max-width: 100%;
+  max-width: 80vw;
   max-height: 80vh; /* Adjust the maximum height as needed */
+  object-fit: contain;
 }
 
 .CloseButton {

@@ -23,7 +23,7 @@ export interface ProjectData {
     {
       id: 'ReactMapApp',
       title: 'React Native Map App',
-      description: 'A mapp app made in React Native',
+      description: 'A map app made in React Native',
       imageUrl: ["../images/reactmapapp.jpg", ],
       skillImages: ['../icons/React.png', '../icons/expo1.png'],
       content: 'One page map app made in React Native using google maps. The user can see their location, custom points of interest and the map turns with the user. This was an Expert Lab project made for school.',

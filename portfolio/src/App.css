@@ -203,7 +203,7 @@ html {
 }
 
 .project-page-title-container img{
-  margin-top: 1.5em;
+  margin-top: em;
   padding-left: 1em;
   width: 35px;
   height: auto;
@@ -230,6 +230,11 @@ html {
   margin: 15px;
   width: 70%; 
 
+}
+
+.project-p{
+  width: 80%; 
+  font-size: 24px;
 }
 
 .technologies {

@@ -162,6 +162,7 @@ html {
     width: 200px;
     height: 200px;
     object-fit: contain;
+    border-radius: 40px;
 }
 
 /* Project Page */
@@ -253,6 +254,7 @@ html {
   height: auto;
   margin-right: 10px;
   margin-bottom: 10px; 
+  border-radius: 15px;
 }
 
 .project-images-container {

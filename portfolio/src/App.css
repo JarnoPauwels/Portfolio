@@ -3,10 +3,16 @@
 @import './Skills.css';
 @import './ProjectCard.css';
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body,
 html {
   height: 100%;
   margin: 0;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
 }
 
 .home-page {
@@ -15,34 +21,66 @@ html {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh; 
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;  */
 }
 
 .section.active {
   opacity: 1;
 }
 
+.section
+
 .introduction {
-  height: 100%;
-  text-align: center;
-  display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
 }
 
+.introduction h1, .introduction h2{
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.introduction h1{
+  font-size: 64px;
+}
+
+.introduction h2{
+  font-size: 40px;
+}
+
+.introduction img{
+  width: 35px;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Projects */
 .projects-section {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2em;
 }
 
 .projects-container{
   width: 80%;
   height: 80%;
+  padding: 20px;
   /* display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -52,16 +90,14 @@ html {
 .projectsCard-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   /* justify-content: center; */
 }
 
-.project-image {
-  /* width: 50%; */
-  /* height: auto; */
-  margin-bottom: 10px;
-  padding-right: 20px;
-}
+/* .project-image {
+  width: 240;
+  height: auto;
+} */
 
 .projects-container h2 {
   margin-bottom: 20px;
@@ -72,25 +108,230 @@ html {
 }
 
 .filter-buttons button {
-  background-color: #3498db;
+  background-color: #2272FF;
   color: white;
+  font-weight: bold;
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border-radius: 10px;
 }
 
 .filter-buttons button:hover {
-  background-color: #2980b9;
+  background-color: #11486c;
 }
 
 .filter-buttons button.active {
-  background-color: #2980b9;
+  background-color: #11486c;
 }
 
-.project-details {
+/* .project-details {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+} */
+
+/* Skills  */
+.skills-section{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
+
+.skills-container {
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  }
+
+.skills-grid {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    /* justify-content: center; */
+}
+  
+.skill-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Project Page */
+.back-to-home-link{
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-page {
+  background-color: #262626;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 100vh;
+}
+
+.project-details-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  width: 80%; 
+  /* align-items: center; */
+}
+
+.project-details-container h1{
+  margin-top: 0;
+}
+
+.project-page-title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-page-title-container img{
+  margin-top: 1.5em;
+  padding-left: 1em;
+  width: 35px;
+  height: auto;
+}
+
+.project-page-title{
+  color: #2272FF;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 64px;
+}
+
+.project-details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* width: 80%;  */
+  /* flex: 1; */
+}
+
+.project-info {
+  /* flex: 1; */
+  /* margin-right: 20px; */
+  margin: 15px;
+  width: 70%; 
+
+}
+
+.technologies {
+  /* flex: 1; */
+  margin: 15px;
+  width: 30%; 
+}
+
+.projectpage-skill-logos {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.projectpage-skill-logo {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+
+.project-images-container {
+  display: flex;
+  align-items: flex-start;  
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+  flex-wrap: wrap; 
+  margin-bottom: 2em;
+}
+
+.project-images-container h1{
+  margin-left: 15px;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.project-page-image{
+  width: 24%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Modal */
+/* src/components/ImageModal.css */
+.ImageModal {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #262626;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  /* text-align: center;
+  position: relative; */
+}
+
+.ImageModal img {
+  max-width: 100%;
+  max-height: 80vh; /* Adjust the maximum height as needed */
+}
+
+.CloseButton {
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  color:#2272FF;
+}
+
+.CloseButton:hover {
+  color:#11486c;
+}
+
+/* .ImageModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.ImageModal img {
+  max-width: 100%;
+  max-height: 70vh; 
+} */
+
+/* .CloseButton{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: right;
+  cursor: pointer;
+} */

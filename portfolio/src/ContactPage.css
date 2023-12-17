@@ -1,0 +1,97 @@
+/* ContactPage.css */
+
+.contact-page {
+  background-color: #262626;
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.contact-content {
+  display: flex;
+  width: 80%; /* Adjust the width as needed */
+}
+
+.contact-info {
+  width: 40%;
+  margin-left: 5%;
+
+}
+
+.contact-form {
+  width: 40%; 
+  margin-left: 10%;
+  border-radius: 8px; 
+  justify-content: center; 
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #E7E7E7; /* Set background color */
+  border: 0.5px solid #CDCDCD; /* Add a border for individual input separation */
+  border-radius: 15px; /* Add border-radius for rounded corners */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.501); /* Add a shadow effect to each input */
+  resize: none;
+  outline: none; 
+}
+
+.contact-button-container {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contact-button {
+  width: 20%;
+  background-color: #2272FF;
+  /* border: 0.5px solid #CDCDCD;  */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px; 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.501); 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.pdf-button {
+  margin-top: 15px;
+  background-color: #2272FF;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.501); 
+  border: none; 
+  border-radius: 15px; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pdf-button:hover {
+  transform: translateY(-2px); 
+  cursor: pointer;
+}

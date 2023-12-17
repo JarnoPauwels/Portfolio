@@ -46,7 +46,7 @@ const ProjectPage: React.FC = () => {
         <div className="project-details">
           <div className="project-info">
             <h1>Project info</h1>
-            <p>{project.content}</p>
+            <p className="project-p" >{project.content}</p>
           </div>
           <div className="technologies">
             <h1>Technologies</h1>
